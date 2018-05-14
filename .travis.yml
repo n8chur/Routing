@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode9.3
+before_install:
+  - brew update
+  - brew install xctool
+install: 
+  - make bootstrap
+script: 
+  - make test

@@ -1,0 +1,2 @@
+github "automatic/AUTLogKit" ~> 6.0
+github "ReactiveCocoa/ReactiveObjC" ~> 3.0
