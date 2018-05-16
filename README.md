@@ -103,7 +103,7 @@ If we have a URL that requires us to parse an identifier out of a path component
 
 Routing also works great for handling notifications and application shortcuts which need to route a user to a particular view in the application. 
 
-[AUTRouter's handleURL command](AUTRouter/AUTRouter.h) is executed with a `RACTwoTuple<NSURL *, id> *` where the second value is a context object. We coould, for example, pass an object that has been deserialized from a notification payload (we suggest using [AUTUserNotifications](https://github.com/Automatic/AUTUserNotifications)) as a "context" object which will be available in any route handlers registered:
+[AUTRouter's handleURL command](AUTRouter/AUTRouter.h) is executed with a `RACTwoTuple<NSURL *, id> *` where the second value is a context object. We could, for example, pass an object that has been deserialized from a notification payload (we suggest using [AUTUserNotifications](https://github.com/Automatic/AUTUserNotifications)) as a "context" object which will be available in any route handlers registered:
 ```objective-c
 /// An example push notification object.
 @interface Notification
@@ -138,7 +138,7 @@ Notification *notification = [[Notification alloc] initWithPayload:@{...}];
 
 ```
 
-See the example project in [AUTPresentations](https://github.com/Automatic/AUTPresentations) for more exmaples of how you can use Routing in your application!
+See the example project in [AUTPresentations](https://github.com/Automatic/AUTPresentations) for more examples of how you can use Routing in your application!
 
 ### Installing
 
